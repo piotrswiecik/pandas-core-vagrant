@@ -16,6 +16,3 @@
         repo: "{{ git_repository }}"
         dest: "/etc/ansible/roles"
         version: "{{ git_branch }}"
-
-
-    
