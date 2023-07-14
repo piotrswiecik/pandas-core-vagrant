@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbooks/clone_roles.yml"
     ansible.extra_vars = {
-      git_repository: "https://github.com/Panda-Academy-Core-2-0/Ansible_roles.git",
+      git_repository: "https://github.com/piotrswiecik/pandas-roles-vagrant.git",
       git_branch: "main"
     }
   end
