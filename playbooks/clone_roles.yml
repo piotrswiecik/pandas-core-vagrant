@@ -4,7 +4,7 @@
   become: true
   vars:
     git_repository: "https://github.com/Panda-Academy-Core-2-0/Ansible_roles.git"
-    git_branch: "main"
+    git_branch: "master"
   tasks:
     - name: Create a directory if it does not exist
       file:
