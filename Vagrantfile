@@ -9,6 +9,8 @@ Vagrant.configure("2") do |config|
   end
   config.vm.network "private_network", ip: "192.168.56.200"
   config.vm.network "forwarded_port", guest: 8880, host: 8880
+  config.vm.network "forwarded_port", guest: 8081, host: 8081
+  config.vm.network "forwarded_port", guest: 8082, host: 8082
   config.vm.network "forwarded_port", guest: 50000, host: 50000
   
   config.vm.provision "ansible_local" do |ansible|
