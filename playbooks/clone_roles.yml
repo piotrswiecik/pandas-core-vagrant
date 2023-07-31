@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    git_repository: "https://github.com/piotrswiecik/pandas-vagrant.git"
+    git_repository: "https://github.com/piotrswiecik/pandas-roles-vagrant.git"
     git_branch: "master"
   tasks:
     - name: Create a directory if it does not exist
